@@ -101,6 +101,11 @@ npm start
 Frontend runs at `http://localhost:3000`  
 Backend runs at `http://localhost:5001`
 
+### 4. Run the unit tests
+```bash
+cd ../server
+npm test
+```
 ---
 
 ## 🚢 Production Deployment
