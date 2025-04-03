@@ -7,7 +7,7 @@ A full-stack, mobile-responsive to-do list app built with React, Node.js, Expres
 ## 🚀 Live Demo
 **Frontend:** [https://todo-app-theta-eight-40.vercel.app](https://todo-app-theta-eight-40.vercel.app)  
 **Backend API:** [https://todo-app-f12q.onrender.com](https://todo-app-f12q.onrender.com)
-
+⚠️ The first time you access the web application, the backend server may take 50–60 seconds to respond as it warms up (due to cold start on free hosting). Subsequent requests will be much faster and perform normally.
 ---
 
 ## 🎯 Features & Functionality
