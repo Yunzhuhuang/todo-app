@@ -94,7 +94,7 @@ import {
             variant="caption"
             sx={{ display: "block", mt: 1, fontStyle: "italic", color: "gray" }}
           >
-            Due: {new Date(task.dueDate).toLocaleDateString()}
+            Due: {new Date(task.dueDate).toISOString().split("T")[0]}
           </Typography>
         )}
           <Chip

@@ -17,7 +17,6 @@ import {
       dueDate: existingTask?.dueDate?.slice(0, 10) || "",
       priority: existingTask?.priority || "Low",
     });
-    const adjustedDueDate = `${formData.dueDate}T00:00:00`;
 
     const [error, setError] = useState("");
   
@@ -46,7 +45,7 @@ import {
         if (existingTask) {
           await API.put(`/tasks/${existingTask._id}`, formData);
         } else {
-          await API.post("/tasks", {...formData, dueDate: adjustedDueDate});
+          await API.post("/tasks", formData);
         }
         onTaskAdded();
         onClose();
