@@ -4,7 +4,7 @@ set up base for making API request
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5001/api",
+  baseURL: process.env.REACT_APP_API_URL,
 });
 
 API.interceptors.request.use((req) => {
