@@ -1,3 +1,6 @@
+/* 
+Connecting to the mongodb cluster.
+*/
 const mongoose = require("mongoose");
 
 const connectDB = async () => {
