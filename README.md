@@ -1,2 +1,123 @@
-# todo-app
-A full-stack to-do list web application with authentication
+# 📝 To-Do List Web Application
+
+A full-stack, mobile-responsive to-do list app built with React, Node.js, Express, and MongoDB. Users can sign up, log in, and manage their own tasks with priority tags, due dates, and completion toggles.
+
+---
+
+## 🚀 Live Demo
+**Frontend:** [https://todo-app-yunzhuhuangs-projects.vercel.app/login](https://todo-app-yunzhuhuangs-projects.vercel.app/login)  
+**Backend API:** [https://todo-app-f12q.onrender.com](https://todo-app-f12q.onrender.com)
+
+---
+
+## 🎯 Features & Functionality
+
+### ✅ Authentication
+- Sign up with username, email, and password
+- Log in with email and password
+- JWT-based authentication with protected routes
+
+### ✅ Task Management
+- Create, read, update, and delete tasks
+- Each task has:
+  - Title (required)
+  - Description (optional)
+  - Priority (Low / Medium / High)
+  - Due date
+  - Completion status toggle (circle icon)
+
+### ✅ UI/UX & Design
+- Built with **React** + **Material-UI** for clean, responsive design
+- Mobile-first layout; task view adapts across screen sizes
+- Validation and error messages shown directly in forms
+
+### ✅ Error Handling
+- Client-side form validation (empty fields, password length, email format)
+- Server-side schema validation (using Mongoose)
+- Friendly error messages (e.g. "Password must be at least 6 characters")
+- Duplicate email/username prevention during registration
+
+### ✅ Unit Tests
+- Auth and task APIs tested with **Jest** and **Supertest**
+- In-memory MongoDB used for isolated test environments
+
+---
+
+## ⚙️ Tech Stack
+
+| Layer        | Technology               |
+|--------------|---------------------------|
+| Frontend     | React, Material-UI, Axios |
+| Backend      | Node.js, Express          |
+| Database     | MongoDB, Mongoose         |
+| Auth         | JWT                       |
+| Testing      | Jest, Supertest           |
+| Deployment   | Vercel (frontend), Render (backend), MongoDB Atlas |
+
+---
+
+## 💻 Local Setup Instructions
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/yourusername/todo-app.git
+cd todo-app
+```
+
+### 2. Setup the Backend (in `server/`)
+```bash
+cd server
+npm install
+```
+
+Create a `.env` file in `server/`:
+```env
+MONGO_URI=your_mongodb_atlas_url
+JWT_SECRET=your_jwt_secret
+```
+
+Start the backend:
+```bash
+npm run dev
+```
+
+### 3. Setup the Frontend (in `client/`)
+```bash
+cd ../client
+npm install
+```
+
+If you're using Vite or CRA, update the `.env` file:
+```env
+VITE_API_URL=http://localhost:5000/api
+```
+
+Start the frontend:
+```bash
+npm start
+```
+
+Frontend runs at `http://localhost:3000`  
+Backend runs at `http://localhost:5000`
+
+---
+
+## 🚢 Production Deployment
+
+### ✅ Backend on Render
+- Deploy `server/` folder
+- Set Root Directory: `server`
+- Add Environment Variables:
+  - `MONGO_URI`
+  - `JWT_SECRET`
+
+### ✅ Frontend on Vercel
+- Deploy `client/` folder
+- Add `.env` with `VITE_API_URL` set to your Render backend URL
+
+### ✅ MongoDB Atlas
+- Cluster hosted online and secured
+- Whitelist IP or allow `0.0.0.0/0` for dev use
+
+---
+

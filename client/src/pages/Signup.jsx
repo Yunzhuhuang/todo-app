@@ -40,6 +40,7 @@ export default function Signup() {
       login(res.data.token); // logs user in after signup
       navigate("/");
     } catch (err) {
+      console.log(err);
       alert("Signup failed");
     }
   };
