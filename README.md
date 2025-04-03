@@ -5,7 +5,7 @@ A full-stack, mobile-responsive to-do list app built with React, Node.js, Expres
 ---
 
 ## 🚀 Live Demo
-**Frontend:** [https://todo-app-yunzhuhuangs-projects.vercel.app/login](https://todo-app-yunzhuhuangs-projects.vercel.app/login)  
+**Frontend:** [https://todo-app-theta-eight-40.vercel.app](https://todo-app-theta-eight-40.vercel.app)  
 **Backend API:** [https://todo-app-f12q.onrender.com](https://todo-app-f12q.onrender.com)
 
 ---
@@ -60,7 +60,7 @@ A full-stack, mobile-responsive to-do list app built with React, Node.js, Expres
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/yourusername/todo-app.git
+git clone https://github.com/Yunzhuhuang/todo-app.git
 cd todo-app
 ```
 
@@ -72,8 +72,8 @@ npm install
 
 Create a `.env` file in `server/`:
 ```env
-MONGO_URI=your_mongodb_atlas_url
-JWT_SECRET=your_jwt_secret
+MONGO_URI=mongodb+srv://todo_user:Hyzh990615@cluster0.t8mhpup.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+JWT_SECRET=y1f72db23e$fgT93lfj@2025superSecret!
 ```
 
 Start the backend:
@@ -89,7 +89,7 @@ npm install
 
 If you're using Vite or CRA, update the `.env` file:
 ```env
-VITE_API_URL=http://localhost:5000/api
+REACT_APP_API_URL=https://todo-app-f12q.onrender.com/api
 ```
 
 Start the frontend:
@@ -98,7 +98,7 @@ npm start
 ```
 
 Frontend runs at `http://localhost:3000`  
-Backend runs at `http://localhost:5000`
+Backend runs at `http://localhost:5001`
 
 ---
 
@@ -113,7 +113,7 @@ Backend runs at `http://localhost:5000`
 
 ### ✅ Frontend on Vercel
 - Deploy `client/` folder
-- Add `.env` with `VITE_API_URL` set to your Render backend URL
+- Add `.env` with `REACT_APP_API_URL` set to your Render backend URL
 
 ### ✅ MongoDB Atlas
 - Cluster hosted online and secured
